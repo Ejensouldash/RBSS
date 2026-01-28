@@ -1,0 +1,7 @@
+{
+  "name": "Copy of ROZITA BINA SMART SYSTEM (RBSS)",
+  "description": "A complete quotation management module for Rozita Bina Enterprise to create, view, and manage professional quotations for their construction and infrastructure services.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

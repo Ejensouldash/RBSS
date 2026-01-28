@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rozita Bina Quotation Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-gold': '#FFD700',
+                        'brand-red': '#D2042D',
+                        'brand-black': '#000000',
+                        'brand-bg': '#F5F5F5',
+                        'brand-text': '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Excel Export Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" integrity="sha512-rgsbbdin5M52VRhlSoxx2G+NjnL4zT94hAqAI5evQqqzqwKGGL+Cj8vDbbBI37S5HnoLGYsfVbV_GloHLCHTaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Word Document (.docx) Reader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.7.0/mammoth.browser.min.js" integrity="sha512-PKf6w9beUM51RfrRLjFwIqjLcU+T36Flsz/2wzlbkQ2N3M5ZfP5Iu2sCp3Y6iL32T2i2AHi0sL9Ay2e42t5PA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0",
+    "recharts": "https://aistudiocdn.com/recharts@^2.13.2",
+    "next/": "https://esm.sh/next@^16.1.1/",
+    "crypto": "https://esm.sh/crypto@^1.0.1",
+    "@neondatabase/serverless": "https://esm.sh/@neondatabase/serverless@^1.0.2",
+    "dotenv": "https://esm.sh/dotenv@^17.2.3",
+    "drizzle-kit": "https://esm.sh/drizzle-kit@^0.31.8",
+    "drizzle-orm": "https://esm.sh/drizzle-orm@^0.45.1",
+    "drizzle-orm/": "https://esm.sh/drizzle-orm@^0.45.1/"
+  }
+}
+</script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 20px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-brand-bg">
+<div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -142,7 +142,7 @@ const QuotationPreviewModal: React.FC<QuotationPreviewModalProps> = ({ quotation
                                 {
                                     stack: [
                                         { text: 'TEMPOH SAH LAKU:', style: 'label', alignment: 'right' },
-                                        { text: '30 HARI', style: 'clientText', alignment: 'right', bold: true }
+                                        { text: '90 HARI DARI TARIKH TUTUP SEBUTHARGA', style: 'clientText', alignment: 'right', bold: true }
                                     ],
                                     border: [false, false, false, false]
                                 }

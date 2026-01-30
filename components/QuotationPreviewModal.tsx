@@ -317,7 +317,7 @@ const QuotationPreviewModal: React.FC<QuotationPreviewModalProps> = ({ quotation
                     </div>
                     <div className="text-right">
                             <p className="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Tempoh Sah Laku</p>
-                            <p className="text-sm font-bold text-gray-800">30 Hari</p>
+                            <p className="text-sm font-bold text-gray-800">90 Hari dari tarikh tutup sebutharga</p>
                     </div>
                 </div>
 
